@@ -1,0 +1,36 @@
+<Configuration ID="a8c81d47-7afb-41a5-9a9d-88710f43d794">
+  <Info Description="IS06 Rednet installation" />
+  <Add OfficeClientEdition="64" Channel="PerpetualVL2019" SourcePath="\\is06rocfs01\outlook2019" AllowCdnFallback="TRUE">
+    <Product ID="ProPlus2019Volume" PIDKEY="NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP">
+      <Language ID="en-us" />
+      <ExcludeApp ID="Access" />
+      <ExcludeApp ID="Excel" />
+      <ExcludeApp ID="Groove" />
+      <ExcludeApp ID="OneDrive" />
+      <ExcludeApp ID="OneNote" />
+      <ExcludeApp ID="PowerPoint" />
+      <ExcludeApp ID="Publisher" />
+      <ExcludeApp ID="Word" />
+    </Product>
+    <Product ID="SkypeforBusinessEntry2019Retail">
+      <Language ID="en-us" />
+    </Product>
+  </Add>
+  <Property Name="SharedComputerLicensing" Value="0" />
+  <Property Name="SCLCacheOverride" Value="0" />
+  <Property Name="AUTOACTIVATE" Value="0" />
+  <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+  <Property Name="DeviceBasedLicensing" Value="0" />
+  <Updates Enabled="TRUE" />
+  <AppSettings>
+    <Setup Name="Company" Value="L3Harris Technologies" />
+    <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+    <User Key="software\microsoft\office\16.0\common" Name="qmenable" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableCustomerExperienceImprovementProgram" />
+    <User Key="software\microsoft\office\16.0\common" Name="updatereliabilitydata" Value="0" Type="REG_DWORD" App="office16" Id="L_UpdateReliabilityPolicy" />
+    <User Key="software\microsoft\office\16.0\osm" Name="enablelogging" Value="0" Type="REG_DWORD" App="office16" Id="L_EnableLogging" />
+    <User Key="software\microsoft\office\16.0\common\feedback" Name="enabled" Value="0" Type="REG_DWORD" App="office16" Id="L_SendFeedback" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
+    <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+  </AppSettings>
+  <Display Level="None" AcceptEULA="FALSE" />
+</Configuration>
